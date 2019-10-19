@@ -1,0 +1,223 @@
+﻿<html><head>
+  <title>めっちゃプロ野球２０１８</title>
+  <meta name="viewport" content="width=device-width">
+  <style>
+  body{
+    display:table;
+    table-layout: fixed;
+    background-image:url("base.jpg");
+    background-size:cover;
+  }
+  input{
+    width: 100px;
+    height: 25px;
+    font-size:16px;
+    text-align:center;
+  }
+  select{
+    width: 100px;
+    height: 25px;
+    font-size:16px;
+    text-align:center;
+  }
+  table{
+    font-size:20px;
+    text-align:center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto
+  }
+  table th {
+    white-space: nowrap;
+    width: 100%;
+  }
+  #ki{font-size:28px;}
+  #poi{font-size:28px;}
+  #keiji{
+    background-color:#000000;
+    color:#ffa000;
+    text-align:left;
+  }
+  #mido{
+    background-color:#006400;
+    color:#ffffff;
+  }
+  #siba{
+    background-color:#98fb98;
+    color:#000000;
+  }
+  </style>
+  </head>
+  <body>
+  <div style="text-align:center;">
+  <h1>
+  <form name="abc">
+  <select name="a1" width="150" height="50">
+  <option value="">*1Pチーム選択</option>
+  <option value="1">福岡</option>
+  <option value="2">埼玉</option>
+  <option value="3">大阪</option>
+  <option value="4">仙台</option>
+  <option value="5">北海道</option>
+  <option value="6">千葉</option>
+  <option value="7">横浜</option>
+  <option value="8">西東京</option>
+  <option value="9">東東京</option>
+  <option value="10">神戸</option>
+  <option value="11">広島</option>
+  <option value="12">名古屋</option>
+  </select>
+  VS
+  <select name="a2" width="150" height="50">
+  <option value="">*2Pチーム選択</option>
+  <option value="1">福岡</option>
+  <option value="2">埼玉</option>
+  <option value="3">大阪</option>
+  <option value="4">仙台</option>
+  <option value="5">北海道</option>
+  <option value="6">千葉</option>
+  <option value="7">横浜</option>
+  <option value="8">西東京</option>
+  <option value="9">東東京</option>
+  <option value="10">神戸</option>
+  <option value="11">広島</option>
+  <option value="12">名古屋</option>
+  </select><br>
+  <input type="button" value="チーム確定" onclick="paseri();"><br>
+  <select id="sepa1" name="b1" width="150" height="50">
+  <option value="">*1P先発選択</option>
+  </select>
+  VS
+  <select id="sepa2" name="b2" width="150" height="50">
+  <option value="">*2P先発選択</option>
+  </select><br>
+  <input type="button" value="スタート" onclick="stai();"><br>
+  <input type="button" value="守備変更1P" onclick="syubi1();">
+  <input type="button" value="名前変更1P" onclick="nama1();">
+  <input type="button" value="打順変更1P" onclick="dajun1();"><br>
+  <input type="button" value="守備変更2P" onclick="syubi2();">
+  <input type="button" value="名前変更2P" onclick="nama2();">
+  <input type="button" value="打順変更2P" onclick="dajun2();"><br>
+  </form>
+  <div id="jikyo">スタートをクリック</div>
+  <table width="100%" border="1">
+  <tbody><tr id="keiji">
+  <td id="ase1" colspan="4">　</td>
+  <td id="poi" colspan="4" rowspan="5" style="text-align:center;">　</td>
+  <td id="bse1" colspan="4">　</td>
+  </tr>
+  <tr id="keiji">
+  <td id="ase2" colspan="4">　</td>
+  <td id="bse2" colspan="4">　</td>
+  </tr>
+  <tr id="keiji">
+  <td id="ase3" colspan="4">　</td>
+  <td id="bse3" colspan="4">　</td>
+  </tr>
+  <tr id="keiji">
+  <td id="ase4" colspan="4">　</td>
+  <td id="bse4" colspan="4">　</td>
+  </tr>
+  <tr id="keiji">
+  <td id="ase5" colspan="4">　</td>
+  <td id="bse5" colspan="4">　</td>
+  </tr>
+  <tr id="keiji">
+  <td id="ase6" colspan="4">　</td>
+  <td id="ki" colspan="4" rowspan="3" style="text-align:center;">　</td>
+  <td id="bse6" colspan="4">　</td>
+  </tr>
+  <tr id="keiji">
+  <td id="ase7" colspan="4">　</td>
+  <td id="bse7" colspan="4">　</td>
+  </tr>
+  <tr id="keiji">
+  <td id="ase8" colspan="4">　</td>
+  <td id="bse8" colspan="4">　</td>
+  </tr>
+  <tr id="keiji">
+  <td id="ase9" colspan="4">　</td>
+  <td id="np" colspan="4" style="text-align:center;"></td>
+  <td id="bse9" colspan="4">　</td>
+  </tr>
+  <tr id="keiji">
+  <td id="ase10" colspan="4">　</td>
+  <td id="nd" colspan="4" style="text-align:center;"></td>
+  <td id="bse10" colspan="4">　</td>
+  </tr>
+  <tr id="siba">
+  <td colspan="4">　</td>
+  <td id="base2" colspan="4">２<br>塁</td>
+  <td colspan="4">　</td>
+  </tr>
+  <tr id="siba">
+  <td id="base3" colspan="4">３<br>塁</td>
+  <td colspan="4">　</td>
+  <td id="base1" colspan="4">１<br>塁</td>
+  </tr>
+  </tbody></table>
+  <table width="100%" border="1">
+  <tbody><tr id="mido" style="text-align:center;">
+  <td colspan="2">チーム</td>
+  <td id="ka1">1</td>
+  <td id="ka2">2</td>
+  <td id="ka3">3</td>
+  <td id="ka4">4</td>
+  <td id="ka5">5</td>
+  <td id="ka6">6</td>
+  <td id="ka7">7</td>
+  <td id="ka8">8</td>
+  <td id="ka9">9</td>
+  <td id="ka10">10</td>
+  <td id="ka11">11</td>
+  <td id="ka12">12</td>
+  <td>R</td>
+  </tr>
+  <tr id="mido">
+  <td id="name1" colspan="2">　</td>
+  <td id="kai1">　</td>
+  <td id="kai2">　</td>
+  <td id="kai3">　</td>
+  <td id="kai4">　</td>
+  <td id="kai5">　</td>
+  <td id="kai6">　</td>
+  <td id="kai7">　</td>
+  <td id="kai8">　</td>
+  <td id="kai9">　</td>
+  <td id="kai10">　</td>
+  <td id="kai11">　</td>
+  <td id="kai12">　</td>
+  <td id="point1">　</td>
+  </tr>
+  <tr id="mido">
+  <td id="name2" colspan="2">　</td>
+  <td id="akai1">　</td>
+  <td id="akai2">　</td>
+  <td id="akai3">　</td>
+  <td id="akai4">　</td>
+  <td id="akai5">　</td>
+  <td id="akai6">　</td>
+  <td id="akai7">　</td>
+  <td id="akai8">　</td>
+  <td id="akai9">　</td>
+  <td id="akai10">　</td>
+  <td id="akai11">　</td>
+  <td id="akai12">　</td>
+  <td id="point2">　</td>
+  </tr>
+  </tbody></table>
+  <input type="button" value="サイコロ" id="sai" onclick="plays()">
+  <div id="rire"></div><div id="rire1"></div><span id="home"></span><div id="rire2"></div><div id="rire3"></div>
+  </h1>
+  <table border="1" id="footer-bk">
+  <tbody><tr id="mido">
+  <td id="pit" colspan="3">　</td>
+  </tr>
+  </tbody></table>
+  </div>
+  <input type="button" value="高速試合" id="sai" onclick="playd()">
+  <input type="button" value="超高速試合" id="sai" onclick="playdd()">
+  <script type="text/javascript" src="prog2018.js">
+  </script>
+  
+  </body></html>
