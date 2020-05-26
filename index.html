@@ -8,6 +8,8 @@
         body{
             font-family:sans-serif;
             background-color:#000000;
+            text-align:center;
+            width:100%;
         }
         input{
             text-align:center;
@@ -18,13 +20,22 @@
         input.field{
             color:#ffdd00;
         }
+        div.main{
+            text-align:center;
+            display:inline-block;
+            margin:0 auto;
+            width:80%;
+        }
+        div.team1,div.team2,div.tokuten{
+            display:inline-block;
+        }
         div.team1{
             float:left;
-            width:500px;
+            width:50%;
         }
         div.team2{
             float:left;
-            width:500px;
+            width:50%;
         }
         table{
             color:#ffffff;
@@ -34,6 +45,7 @@
     </style>
 </head>
 <body>
+    <div class="main">
     <div class="tokuten">
         <table>
             <tr style="font-size:18px;">
@@ -106,17 +118,6 @@
         <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="１" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="西　勇" maxlength="6"><br>
         <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="Ｐ" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="西　勇" maxlength="6"><br>
     </div>
-    <script>
-        const odai1="こんな サザエさん は いやだ"
-        const odai2="令和 が 終了 次 の 元号 は？"
-        const odai3="こんな 朝ごはん は いやだ"
-        const odai4="世界 ふしぎ 発見 で 放送事故 内容 は？"
-
-        function ogiri(){
-            let odai=document.getElementById("odai").innerText
-            let odai2=odai.split(" ")
-
-        }
-    </script>
+    </div>
 </body>
 </html>
