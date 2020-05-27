@@ -13,12 +13,22 @@
         }
         input{
             text-align:center;
+            background-color:#000000;
+            border-width:0px;
+            border-style:None;
+            font-size:36px;
         }
         input.sensyu{
             color:#ffffff;
+            width:300px;
         }
         input.field{
             color:#ffdd00;
+            width:50px;
+        }
+        input.field2{
+            color:#ffdd00;
+            width:350px;
         }
         div.main{
             text-align:center;
@@ -30,24 +40,36 @@
             display:inline-block;
         }
         div.team1{
+            border:1px solid #ffffff;
             float:left;
-            width:50%;
+            width:39%;
         }
         div.team2{
+            border:1px solid #ffffff;
             float:left;
-            width:50%;
+            width:39%;
+        }
+        div.team3{
+            float:left;
+            width:20%;
         }
         table{
+            display:inline-block;
             color:#ffffff;
             border:1px solid #ffffff;
             text-align:center;
         }
+        td.tab{
+            width:3vw;
+            height:3vw;
+        }
+
     </style>
 </head>
 <body>
     <div class="main">
     <div class="tokuten">
-        <table>
+        <table style="background-color:#99aaff;">
             <tr style="font-size:18px;">
                 <th>チーム</th>
                 <th>１</th>
@@ -77,7 +99,7 @@
                 <td><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" type="text" class="field" value="0" maxlength="2"></td>
             </tr>
             <tr>
-                <td><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:350px;" class="field" type="text" value="タイガース"" maxlength="6" id="team1"></td>
+                <td><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:350px;" class="field" type="text" value="タイガース" maxlength="6" id="team1"></td>
                 <td><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" type="text" class="sensyu" value="0" maxlength="2"></td>
                 <td><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" type="text" class="sensyu" value="0" maxlength="2"></td>
                 <td><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" type="text" class="sensyu" value="0" maxlength="2"></td>
@@ -93,31 +115,67 @@
         </table>
     </div>
     <div class="team1">
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:350px;" class="field" type="text" value="ベイスターズ" maxlength="7" id="team1"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="８" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="神　里" maxlength="6"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="９" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="梶　谷" maxlength="6"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="３" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="ロペス" maxlength="6"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="４" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="ソ　ト" maxlength="6"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="５" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="宮　崎" maxlength="6"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="７" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="佐　野" maxlength="6"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="２" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="伊藤光" maxlength="6"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="１" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="今　永" maxlength="6"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="６" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="大　和" maxlength="6"><br>
-    <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="Ｐ" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="今　永" maxlength="6"><br>
+        <input class="field2" type="text" value="ベイスターズ" maxlength="7" id="team1"><br>
+        <input class="field" type="text" value="８" maxlength="1"><input type="text" class="sensyu" value="神　里" maxlength="6"><br>
+        <input class="field" type="text" value="９" maxlength="1"><input type="text" class="sensyu" value="梶　谷" maxlength="6"><br>
+        <input class="field" type="text" value="３" maxlength="1"><input type="text" class="sensyu" value="ロペス" maxlength="6"><br>
+        <input class="field" type="text" value="４" maxlength="1"><input type="text" class="sensyu" value="ソ　ト" maxlength="6"><br>
+        <input class="field" type="text" value="５" maxlength="1"><input type="text" class="sensyu" value="宮　崎" maxlength="6"><br>
+        <input class="field" type="text" value="７" maxlength="1"><input type="text" class="sensyu" value="佐　野" maxlength="6"><br>
+        <input class="field" type="text" value="２" maxlength="1"><input type="text" class="sensyu" value="伊藤光" maxlength="6"><br>
+        <input class="field" type="text" value="１" maxlength="1"><input type="text" class="sensyu" value="今　永" maxlength="6"><br>
+        <input class="field" type="text" value="６" maxlength="1"><input type="text" class="sensyu" value="大　和" maxlength="6"><br>
+        <input class="field" type="text" value="Ｐ" maxlength="1"><input type="text" class="sensyu" value="今　永" maxlength="6"><br>
+    </div>
+    <div class="team3">
+        <table style="background-color:#99aaff; padding:1vw;">
+            <tr>
+                <td class="tab">　</td>
+                <td class="tab" style="transform: rotate(-45deg);background-color:#ffffff;" id="b2" onclick="base(2)">　</td>
+                <td class="tab">　</td>
+            </tr>
+            <tr>
+                <td class="tab" style="transform: rotate(-45deg);background-color:#ffffff;"id="b3" onclick="base(3)">　</td>
+                <td class="tab">　</td>
+                <td class="tab" style="transform: rotate(-45deg);background-color:#ffffff;"id="b1" onclick="base(1)">　</td>
+            </tr>
+            <tr>
+                <td>　</td>
+                <td>　</td>
+                <td>　</td>
+            </tr>
+            <tr>
+                <td class="tab">Ｏ</td>
+                <td class="tab" style="border-radius:50%;background-color:#ffffff;;"id="b4" onclick="base(4)">　</td>
+                <td class="tab" style="border-radius:50%;background-color:#ffffff;;"id="b5" onclick="base(5)">　</td>
+            </tr>
+        </table>
     </div>
     <div class="team2">
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:350px;" class="field" type="text" value="タイガース" maxlength="7" id="team1"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="８" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="近　本" maxlength="6"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="４" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="糸　原" maxlength="6"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="９" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="糸　井" maxlength="6"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="３" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="ボーア" maxlength="6"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="５" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="大　山" maxlength="6"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="７" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="高　山" maxlength="6"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="６" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="木　浪"" maxlength="6"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="２" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="梅　野" maxlength="6"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="１" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="西　勇" maxlength="6"><br>
-        <input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:50px;" class="field" type="text" value="Ｐ" maxlength="1"><input style="background-color:#000000;border-width:0px;border-style:None;font-size:36px;width:300px;" type="text" class="sensyu" value="西　勇" maxlength="6"><br>
+        <input class="field2" type="text" value="タイガース" maxlength="7" id="team1"><br>
+        <input class="field" type="text" value="８" maxlength="1"><input type="text" class="sensyu" value="近　本" maxlength="6"><br>
+        <input class="field" type="text" value="４" maxlength="1"><input type="text" class="sensyu" value="糸　原" maxlength="6"><br>
+        <input class="field" type="text" value="９" maxlength="1"><input type="text" class="sensyu" value="糸　井" maxlength="6"><br>
+        <input class="field" type="text" value="３" maxlength="1"><input type="text" class="sensyu" value="ボーア" maxlength="6"><br>
+        <input class="field" type="text" value="５" maxlength="1"><input type="text" class="sensyu" value="大　山" maxlength="6"><br>
+        <input class="field" type="text" value="７" maxlength="1"><input type="text" class="sensyu" value="高　山" maxlength="6"><br>
+        <input class="field" type="text" value="６" maxlength="1"><input type="text" class="sensyu" value="木　浪" maxlength="6"><br>
+        <input class="field" type="text" value="２" maxlength="1"><input type="text" class="sensyu" value="梅　野" maxlength="6"><br>
+        <input class="field" type="text" value="１" maxlength="1"><input type="text" class="sensyu" value="西　勇" maxlength="6"><br>
+        <input class="field" type="text" value="Ｐ" maxlength="1"><input type="text" class="sensyu" value="西　勇" maxlength="6"><br>
     </div>
     </div>
+    <script>
+        let b=[0,0,0,0,0,0]
+        function base(rui){
+            if(b[rui]==0){
+                document.getElementById("b"+rui).style.backgroundColor="#ff0000";
+                b[rui]=1
+            }else if(b[rui]==1){
+                document.getElementById("b"+rui).style.backgroundColor="#ffffff";
+                b[rui]=0
+            }
+        }
+    </script>
 </body>
 </html>
