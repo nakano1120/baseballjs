@@ -63,7 +63,13 @@
             width:3vw;
             height:3vw;
         }
-
+        .short{
+            width:50px;
+            height:auto;
+        }
+        #result2{
+            color:#ffdd00;
+        }
     </style>
 </head>
 <body>
@@ -150,6 +156,20 @@
                 <td class="tab" style="border-radius:50%;background-color:#ffffff;;"id="b5" onclick="base(5)">　</td>
             </tr>
         </table>
+        <table style="background-color:#99aaff;">
+            <tr>
+                <td id="sai1"><img class="short" src="img/dice1.png"></td>
+                <td id="sai2"><img class="short" src="img/dice1.png"></td>
+            </tr>
+            <tr>
+                <td class="result" id="result1">安打</td>
+                <td class="result" id="result2">三塁打</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input style="color:#ffffff;background-color:#99aaff;border:1px solid #ffffff;"type="button" value="START" onclick="psai()"></td>
+            </tr>
+        </table>
+        <input type="button" style="color:#ffffff;background-color:#99aaff;border:1px solid #ffffff;"value="ヒット" onclick="hitplay()"></input>
     </div>
     <div class="team2">
         <input class="field2" type="text" value="TIGERS" maxlength="8" id="team1"><br>
@@ -164,6 +184,7 @@
         <input class="field" type="text" value="１" maxlength="1"><input type="text" class="sensyu" value="西　勇" maxlength="6"><br>
         <input class="field" type="text" value="Ｐ" maxlength="1"><input type="text" class="sensyu" value="西　勇" maxlength="6"><br>
     </div>
+    
     </div>
     <script>
         let b=[0,0,0,0,0,0]
@@ -175,6 +196,112 @@
                 document.getElementById("b"+rui).style.backgroundColor="#ffffff";
                 b[rui]=0
             }
+        }
+        function psai(){
+            let dice1=Math.floor(Math.random() * 6) + 1;
+            let dice2=Math.floor(Math.random() * 6) + 1;
+            document.getElementById("sai1").innerHTML='<img class="short" src="img/dice'+dice1+'.png">'
+            document.getElementById("sai2").innerHTML='<img class="short" src="img/dice'+dice2+'.png">'
+            if(dice1>dice2){
+                document.getElementById("sai1").innerHTML='<img class="short" src="img/dice'+dice2+'.png">'
+            document.getElementById("sai2").innerHTML='<img class="short" src="img/dice'+dice1+'.png">'
+            }
+            switch(dice1){
+                case 1:
+                    switch(dice2){
+                        case 1:
+                            document.getElementById("result1").innerHTML="安打表"
+                            document.getElementById("result2").innerHTML="三塁打"
+                            break;
+                        case 2:
+                            document.getElementById("result1").innerHTML="凡打"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 3:
+                            document.getElementById("result1").innerHTML="併殺"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 4:
+                            document.getElementById("result1").innerHTML="三振"
+                            document.getElementById("result2").innerHTML="二塁打"
+                            break;
+                        case 5:
+                            document.getElementById("result1").innerHTML="安打表"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 6:
+                            document.getElementById("result1").innerHTML="凡打"
+                            document.getElementById("result2").innerHTML="アウト"
+                            break;
+                    }
+                    break
+                case 2:
+                    switch(dice2){
+                        case 1:
+                            document.getElementById("result1").innerHTML="凡打"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 2:
+                            document.getElementById("result1").innerHTML="安打表"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 3:
+                            document.getElementById("result1").innerHTML="凡打"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 4:
+                            document.getElementById("result1").innerHTML="凡打"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 5:
+                            document.getElementById("result1").innerHTML="三振"
+                            document.getElementById("result2").innerHTML="二塁打"
+                            break;
+                        case 6:
+                            document.getElementById("result1").innerHTML="安打表"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                    }
+                    break
+                case 3:
+                    switch(dice2){
+                        case 1:
+                            document.getElementById("result1").innerHTML="凡打"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 2:
+                            document.getElementById("result1").innerHTML="安打表"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 3:
+                            document.getElementById("result1").innerHTML="凡打"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 4:
+                            document.getElementById("result1").innerHTML="凡打"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                        case 5:
+                            document.getElementById("result1").innerHTML="三振"
+                            document.getElementById("result2").innerHTML="二塁打"
+                            break;
+                        case 6:
+                            document.getElementById("result1").innerHTML="安打表"
+                            document.getElementById("result2").innerHTML="単打"
+                            break;
+                    }
+                    break
+                case 4:
+                    break
+                case 5:
+                    break
+                case 6:
+                    break
+            }
+        }
+        function hitplay(){
+            let music = new Audio('hit.mp3');
+            music.play()
         }
     </script>
 </body>
