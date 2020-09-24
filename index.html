@@ -30,6 +30,10 @@
             color:#ffdd00;
             width:350px;
         }
+        input.field3{
+            color:#ffffff;
+            width:50px;
+        }
         div.main{
             text-align:center;
             display:inline-block;
@@ -69,6 +73,10 @@
         }
         #result2{
             color:#ffdd00;
+        }
+        .lr{
+            height:35px;
+            width:10px;
         }
     </style>
 </head>
@@ -122,16 +130,16 @@
     </div>
     <div class="team1">
         <input class="field2" type="text" value="BAYSTARS" maxlength="8" id="team1"><br>
-        <input class="field" type="text" value="８" maxlength="1"><input type="text" class="sensyu" value="神　里" maxlength="6"><br>
-        <input class="field" type="text" value="９" maxlength="1"><input type="text" class="sensyu" value="梶　谷" maxlength="6"><br>
-        <input class="field" type="text" value="３" maxlength="1"><input type="text" class="sensyu" value="ロペス" maxlength="6"><br>
-        <input class="field" type="text" value="４" maxlength="1"><input type="text" class="sensyu" value="ソ　ト" maxlength="6"><br>
-        <input class="field" type="text" value="５" maxlength="1"><input type="text" class="sensyu" value="宮　崎" maxlength="6"><br>
-        <input class="field" type="text" value="７" maxlength="1"><input type="text" class="sensyu" value="佐　野" maxlength="6"><br>
-        <input class="field" type="text" value="２" maxlength="1"><input type="text" class="sensyu" value="伊藤光" maxlength="6"><br>
-        <input class="field" type="text" value="１" maxlength="1"><input type="text" class="sensyu" value="今　永" maxlength="6"><br>
-        <input class="field" type="text" value="６" maxlength="1"><input type="text" class="sensyu" value="大　和" maxlength="6"><br>
-        <input class="field" type="text" value="Ｐ" maxlength="1"><input type="text" class="sensyu" value="今　永" maxlength="6"><br>
+        <input class="field3" type="text" value="1" maxlength="1"><input class="field" type="text" value="中" maxlength="1"><input type="button" class="lr" id="lr11" onclick="leftright(1,1)">　</span><input type="text" class="sensyu" value="神　里" maxlength="6"><br>
+        <input class="field3" type="text" value="2" maxlength="1"><input class="field" type="text" value="右" maxlength="1"><input type="button" class="lr" id="lr12" onclick="leftright(1,2)">　</span><input type="text" class="sensyu" value="梶　谷" maxlength="6"><br>
+        <input class="field3" type="text" value="3" maxlength="1"><input class="field" type="text" value="一" maxlength="1"><input type="button" class="lr" id="lr13" onclick="leftright(1,3)">　</span><input type="text" class="sensyu" value="ロペス" maxlength="6"><br>
+        <input class="field3" type="text" value="4" maxlength="1"><input class="field" type="text" value="二" maxlength="1"><input type="button" class="lr" id="lr14" onclick="leftright(1,4)">　</span><input type="text" class="sensyu" value="ソ　ト" maxlength="6"><br>
+        <input class="field3" type="text" value="5" maxlength="1"><input class="field" type="text" value="三" maxlength="1"><input type="button" class="lr" id="lr15" onclick="leftright(1,5)">　</span><input type="text" class="sensyu" value="宮　崎" maxlength="6"><br>
+        <input class="field3" type="text" value="6" maxlength="1"><input class="field" type="text" value="左" maxlength="1"><input type="button" class="lr" id="lr16" onclick="leftright(1,6)">　</span><input type="text" class="sensyu" value="佐　野" maxlength="6"><br>
+        <input class="field3" type="text" value="7" maxlength="1"><input class="field" type="text" value="捕" maxlength="1"><input type="button" class="lr" id="lr17" onclick="leftright(1,7)">　</span><input type="text" class="sensyu" value="伊藤光" maxlength="6"><br>
+        <input class="field3" type="text" value="8" maxlength="1"><input class="field" type="text" value="投" maxlength="1"><input type="button" class="lr" id="lr18" onclick="leftright(1,8)">　</span><input type="text" class="sensyu" value="今　永" maxlength="6"><br>
+        <input class="field3" type="text" value="9" maxlength="1"><input class="field" type="text" value="遊" maxlength="1"><input type="button" class="lr" id="lr19" onclick="leftright(1,9)">　</span><input type="text" class="sensyu" value="大　和" maxlength="6"><br>
+        <input class="field3" type="text" value="" maxlength="1"><input class="field" type="text" value="投" maxlength="1"><input type="button" class="lr" id="lr10" onclick="leftright(1,0)">　</span><input type="text" class="sensyu" value="今　永" maxlength="6"><br>
     </div>
     <div class="team3">
         <table style="background-color:#99aaff; padding:1vw;">
@@ -173,16 +181,16 @@
     </div>
     <div class="team2">
         <input class="field2" type="text" value="TIGERS" maxlength="8" id="team1"><br>
-        <input class="field" type="text" value="８" maxlength="1"><input type="text" class="sensyu" value="近　本" maxlength="6"><br>
-        <input class="field" type="text" value="４" maxlength="1"><input type="text" class="sensyu" value="糸　原" maxlength="6"><br>
-        <input class="field" type="text" value="９" maxlength="1"><input type="text" class="sensyu" value="糸　井" maxlength="6"><br>
-        <input class="field" type="text" value="３" maxlength="1"><input type="text" class="sensyu" value="ボーア" maxlength="6"><br>
-        <input class="field" type="text" value="５" maxlength="1"><input type="text" class="sensyu" value="大　山" maxlength="6"><br>
-        <input class="field" type="text" value="７" maxlength="1"><input type="text" class="sensyu" value="高　山" maxlength="6"><br>
-        <input class="field" type="text" value="６" maxlength="1"><input type="text" class="sensyu" value="木　浪" maxlength="6"><br>
-        <input class="field" type="text" value="２" maxlength="1"><input type="text" class="sensyu" value="梅　野" maxlength="6"><br>
-        <input class="field" type="text" value="１" maxlength="1"><input type="text" class="sensyu" value="西　勇" maxlength="6"><br>
-        <input class="field" type="text" value="Ｐ" maxlength="1"><input type="text" class="sensyu" value="西　勇" maxlength="6"><br>
+        <input class="field3" type="text" value="1" maxlength="1"><input class="field" type="text" value="中" maxlength="1"><input type="button" class="lr" id="lr21" onclick="leftright(2,1)">　</span><input type="text" class="sensyu" value="近　本" maxlength="6"><br>
+        <input class="field3" type="text" value="2" maxlength="1"><input class="field" type="text" value="二" maxlength="1"><input type="button" class="lr" id="lr22" onclick="leftright(2,2)">　</span><input type="text" class="sensyu" value="糸　原" maxlength="6"><br>
+        <input class="field3" type="text" value="3" maxlength="1"><input class="field" type="text" value="右" maxlength="1"><input type="button" class="lr" id="lr23" onclick="leftright(2,3)">　</span><input type="text" class="sensyu" value="糸　井" maxlength="6"><br>
+        <input class="field3" type="text" value="4" maxlength="1"><input class="field" type="text" value="一" maxlength="1"><input type="button" class="lr" id="lr24" onclick="leftright(2,4)">　</span><input type="text" class="sensyu" value="ボーア" maxlength="6"><br>
+        <input class="field3" type="text" value="5" maxlength="1"><input class="field" type="text" value="三" maxlength="1"><input type="button" class="lr" id="lr25" onclick="leftright(2,5)">　</span><input type="text" class="sensyu" value="大　山" maxlength="6"><br>
+        <input class="field3" type="text" value="6" maxlength="1"><input class="field" type="text" value="左" maxlength="1"><input type="button" class="lr" id="lr26" onclick="leftright(2,6)">　</span><input type="text" class="sensyu" value="高　山" maxlength="6"><br>
+        <input class="field3" type="text" value="7" maxlength="1"><input class="field" type="text" value="遊" maxlength="1"><input type="button" class="lr" id="lr27" onclick="leftright(2,7)">　</span><input type="text" class="sensyu" value="木　浪" maxlength="6"><br>
+        <input class="field3" type="text" value="8" maxlength="1"><input class="field" type="text" value="捕" maxlength="1"><input type="button" class="lr" id="lr28" onclick="leftright(2,8)">　</span><input type="text" class="sensyu" value="梅　野" maxlength="6"><br>
+        <input class="field3" type="text" value="9" maxlength="1"><input class="field" type="text" value="投" maxlength="1"><input type="button" class="lr" id="lr29" onclick="leftright(2,9)">　</span><input type="text" class="sensyu" value="西　勇" maxlength="6"><br>
+        <input class="field3" type="text" value="" maxlength="1"><input class="field" type="text" value="投" maxlength="1"><input type="button" class="lr" id="lr20" onclick="leftright(2,0)">　</span><input type="text" class="sensyu" value="西　勇" maxlength="6"><br>
     </div>
     
     </div>
@@ -302,6 +310,20 @@
         function hitplay(){
             let music = new Audio('hit.mp3');
             music.play()
+        }
+        for(let i=1;i<3;i++){
+            for(let l=0;l<10;l++){
+                document.getElementById("lr"+i+l).style.backgroundColor="#ff00ff";
+            }
+        }
+        function leftright(team,dajun){
+            if(document.getElementById("lr"+team+dajun).style.backgroundColor=="rgb(255, 0, 255)"){
+                document.getElementById("lr"+team+dajun).style.backgroundColor="rgb(0, 204, 255)"
+            }else if(document.getElementById("lr"+team+dajun).style.backgroundColor=="rgb(0, 204, 255)"){
+                document.getElementById("lr"+team+dajun).style.backgroundColor="rgb(0, 255, 0)"
+            }else if(document.getElementById("lr"+team+dajun).style.backgroundColor=="rgb(0, 255, 0)"){
+                document.getElementById("lr"+team+dajun).style.backgroundColor="rgb(255, 0, 255)"
+            }
         }
     </script>
 </body>
